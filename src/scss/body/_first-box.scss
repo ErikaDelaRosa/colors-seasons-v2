@@ -1,0 +1,135 @@
+body {
+  background-color: color(cocktail);
+  padding: $page-padding;
+  border: $page-border;
+  font-size: 25px;
+  color: color(fun);
+  // #box-spring {
+  //  width: $box-size;
+  // height: $box-size;}
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: color(cocktail);
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: color(sunset);
+}
+
+.mycontainer {
+  height: 18vw;
+  width: 60vw;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box-spring {
+  @include flex-div;
+  @include font-setup;
+  width: 60vw;
+  border: $box-border;
+  #col1 {
+    background-color: color(base);
+    width: $col-width;
+    height: $col-height;
+    padding: $col-padding;
+  }
+  #col2 {
+    background-color: color(nice);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+  #col3 {
+    background-color: color(cool);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+}
+
+#box-summer {
+  width: $box-size;
+  padding: 10px;
+  @include flex-div;
+  @include font-setup;
+  width: 60vw;
+  border: $box-border;
+  #col4 {
+    background-color: color(fun);
+    width: $col-width;
+    height: $col-height;
+    padding: $col-padding;
+  }
+  #col5 {
+    background-color: color(summer);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+  #col6 {
+    background-color: color(cocktail);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+}
+
+#box-autumn {
+  width: $box-size;
+  padding: 10px;
+  @include flex-div;
+  @include font-setup;
+  width: 60vw;
+  border: $box-border;
+  #col7 {
+    background-color: color(choco);
+    width: $col-width;
+    height: $col-height;
+    padding: $col-padding;
+  }
+  #col8 {
+    background-color: color(sofa);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+  #col9 {
+    background-color: color(sunset);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+}
+
+#box-winter {
+  width: $box-size;
+  padding: 10px;
+  border: $box-border;
+  @include flex-div;
+  @include font-setup;
+  width: 60vw;
+  #col10 {
+    background-color: color(snowing);
+    width: $col-width;
+    height: $col-height;
+    padding: $col-padding;
+  }
+  #col11 {
+    background-color: color(warm);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+  #col12 {
+    background-color: color(santa);
+    width: $col-width;
+    padding: $col-padding;
+    height: $col-height;
+  }
+}
